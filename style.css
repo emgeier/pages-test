@@ -402,6 +402,60 @@ body {
   color: #4a5568;
 }
 
+/* Connection Diagram */
+.connection-diagram {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+  flex-wrap: wrap;
+}
+
+.conn-box {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-top: 4px solid;
+}
+
+.conn-source {
+  border-top-color: #4299e1;
+}
+
+.conn-consumer {
+  border-top-color: #48bb78;
+}
+
+.conn-box h4 {
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.conn-box p {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 0.25rem;
+}
+
+.conn-detail {
+  font-size: 0.8rem !important;
+  color: #a0aec0 !important;
+  font-style: italic;
+}
+
+.conn-arrow {
+  font-size: 2rem;
+  color: #a0aec0;
+  font-weight: 700;
+}
+
+.pipeline-overview {
+  margin-bottom: 2.5rem;
+}
+
 /* Footer */
 .footer {
   background: #1a202c;
