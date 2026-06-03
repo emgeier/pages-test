@@ -264,14 +264,7 @@
           </div>
         </div>
 
-        <h3>Amplify Storage Paths</h3>
-        <div class="code-block">
-          <pre><code>video/*           — Source broadcast video files
-result/*          — Ground truth CSV and evaluation data
-brian_results/*   — Automated segmentation output (JSON)
-edits/*           — Human-corrected segment annotations (CSV)
-evaluation/*      — Model evaluation metrics</code></pre>
-        </div>
+        
       </div>
     </section>
 
@@ -381,6 +374,7 @@ evaluation/*      — Model evaluation metrics</code></pre>
         <h3>Cost &amp; Performance</h3>
         <div class="code-block">
           <pre><code>Per 1-hour broadcast:
+├── Video processing to find commercial breaks free-tier Lambda or $.035/10 videos           
 ├── Transcription (AWS Transcribe): ~$0.72, 3-5 min
 ├── AI Segmentation (Bedrock Claude): ~$0.60-$0.80, 2-4 min
 └── Evaluation: ~$0.01, 30 sec
