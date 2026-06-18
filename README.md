@@ -1,6 +1,6 @@
 # TV News Commercial Segment Detector — Documentation Site
 
-A static documentation site explaining how the VCIL Commercial Segmentation Tool works, covering both the backend processing pipeline and the frontend visualization application.
+A static documentation site explaining how the VCIL Commercial Segmentation Tool works, covering both the backend processing pipeline and the frontend for visualization, review, and editing application.
 
 ## Hosting on GitHub Pages
 

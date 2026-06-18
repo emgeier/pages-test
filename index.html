@@ -300,7 +300,7 @@
               <div class="arch-content">
                 <h4>AI Segmentation</h4>
                 <p class="arch-tech">Amazon Bedrock (Claude Sonnet)</p>
-                <p>The filtered transcript is sent to Claude via Pydantic AI. The model acts as a "Junior Archivist," identifying news segment boundaries by detecting topic changes, anchor handoffs, and reporter transitions. Returns structured segment data with verbatim first/last sentences.</p>
+                <p>The filtered transcript is sent to Claude via Pydantic AI. The model acts as a "Junior Archivist," identifying news segment boundaries by detecting topic changes, anchor handoffs, and reporter transitions. Returns structured segment data with verbatim first/last sentences.Output: </p>
               </div>
             </div>
             <div class="arch-arrow">↓</div>
@@ -334,11 +334,12 @@
           <div class="conn-arrow">→</div>
           <div class="conn-box conn-consumer">
             <h4>Transcription AI Tool</h4>
+            <p>Inputs: <code>{video}_segments.json</code> and video to transcribe</p>
             <p>Consumes: commercial timings to filter transcript</p>
             <p class="conn-detail">Removes commercial speech → clean news-only text for AI analysis</p>
+            <p>Outputs: <code>{video}.json</code>: News program segments</p>          
           </div>
         </div>
-
         <h3>AI Segmentation Approach</h3>
         <div class="algo-section">
           <p>The system uses Claude (via Amazon Bedrock) with a carefully crafted archival prompt that instructs the model to:</p>
